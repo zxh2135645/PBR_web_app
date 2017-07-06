@@ -55,7 +55,7 @@ def get_data(globStr):
             output_data[-1]["rsfmri_files"] = rsfmri_files
             output_data[-1]["t1_files"] = t1_count
             output_data[-1]["t2_files"] = t2_count
-            output_data[-1]["test_mse"] = mseid
+            # output_data[-1]["test_mse"] = mseid
 
     save_json(os.path.join(os.path.realpath('.'), "status.json"), output_data)
     return output_data
